@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+body,html{
+	margin: 0px;
+}
+body{
+	margin:0px;
+	overflow-x: hidden;
+        overflow-y: visible;
+        overflow: hidden;
+}
+.fix{
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top:0;
+	z-index: 1;
+	overflow: hidden;
+}
+.ti{
+	margin-left: 30px;
+	font-size: 50px;
+	margin-top: 10px;
+	color: #d4af7a;
+	float: left;
+	font-family: sans-serif;
+        cursor:pointer;
+
+}
+
+.k{
+
+	float: right;
+	margin-right: 20px;
+	margin-top: 25px;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	font-weight: bolder;
+	font-family:sans-serif;
+}
+.ban{
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	background-image: url(img/he.jpg);
+	background-size: cover;
+	background-position: absolute;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	justify-content: center;
+	z-index: 0;
+	display: flex;
+}
+.q{
+	float: left;
+	margin-top: 180px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 50px;
+}
+.bt{
+	width: 220px;
+	height: 28px;
+	font-size: 25px;
+	font-weight: initial;
+	text-align: center;
+	background-color:#d4af7a; 
+	cursor: pointer;
+	margin-top: 30px;
+        border-radius: 15px;
+}
+.bt:hover{
+	background-color: white;
+        box-shadow: 3px 3px 10px #d4af7a;
+        color:#d4af7a;
+    }
+.bt2{
+	width: 260px;
+	height: 28px;
+	font-size: 25px;
+	font-weight: initial;
+	text-align: center;
+	background-color:#d4af7a; 
+	cursor: pointer;
+	margin-top: 30px;
+        border-radius: 15px;
+        margin-left: -20px;
+}
+
+.bt2:hover{
+	background-color: white;
+	color: black;
+        box-shadow: 3px 3px 10px #d4af7a;
+        color:#d4af7a;
+    }
+    .z{
+	float: left;
+	background-color: rgba(255,255,255,0.2);
+	height: 400px;
+	width: 500px;
+	margin-left: 130px;
+	margin-top: 160px;
+        border-radius: 20px;
+}
+.z:hover{
+            box-shadow: 3px 3px 10px white;
+
+}
+.x{
+	background-color: rgba(255,255,255,0.3);
+	height: 70px;
+	width: 470px;
+	margin-left: 15px;
+	margin-top: 15px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px #d4af7a;
+}
+.y{
+	color: white;
+	font-size: 50px;
+	font-family: sans-serif;
+	font-weight: unset;
+}
+.v{
+	background-color: rgba(255,255,255,0.3);
+	height: 30px;
+	margin-top: 60px;
+	margin-left: 30px;
+	width: 150px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+        border:1 px solid white;
+        border-radius: 15px;
+        
+}
+
+.v:hover{
+    box-shadow:3px 3px 10px white;
+}
+.b{
+	background-color: rgba(255,255,255,0.3);
+	height: 30px;
+	margin-top: 60px;
+	margin-left: 100px;
+	float: left;
+	width: 150px;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+        border:1 px solid white;
+        border-radius: 15px;
+}
+.b:hover{
+    box-shadow:3px 3px 10px white;
+}
+.f{
+	background-color: #d4af7a;
+	color: white;
+	text-align: center;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bolder;
+        cursor:pointer;
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px white;
+
+}
+.f:hover{
+	background-color: white;
+	color:#d4af7a;
+        box-shadow: 3px 3px 10px #d4af7a;
+}
+table{
+	width: 80%;
+	height: auto;
+	border: 1px solid white;
+	border-collapse: separate;
+	margin: 20px auto;
+}
+th{
+	color: #d4af7a;
+	background-color: white;
+	text-align: left;
+	font-family: sans-serif;
+	font-size:20px;
+  font-weight:400;
+  padding:10px;
+}
+td{
+	padding: 5px;
+}
+tr{
+	color: white;
+}
+tr:nth-child(even){
+	background-color:rgba(212,175,122,0.5); 
+}
+tr:hover{
+	color: #d4af7a;
+	background-color: white;
+}
+.aa:hover{
+	color: red;
+}
+.bb:hover{
+	color: #d4af7a;
+}
+.qq{
+	cursor: pointer; 
+	width: 80px; 
+	height: 20px; 
+	background-color: white; 
+	color: #d4af7a; 
+	border-radius: 10%; 
+	margin-top: 40px;
+}
+.qq:hover{
+	background-color: #d4af7a;
+	color: white;
+}
+.ett{
+	width: 100%;
+	height: 549px;
+	position: relative;
+	box-sizing: border-box;
+	top: 686px;
+	background-color:rgba(212,175,122,0.8);
+	
+	padding-left: 230px;
+	padding-top: 50px;
+}
+.ppp{
+	height: 445px;
+	width: 900px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 20px;
+}
+.ppp:hover{
+    box-shadow: 10px 10px 10px white;
+}
+.qwe{
+	height: 23px;
+	width: 160px;
+        border: none;
+	background-color: white;
+	color: #d4af7a;
+	font-family: sans-serif;
+	font-size:20px;
+        font-weight:400;
+        border-radius: 5%;
+        margin-left: 10px;
+        border-radius: 20px;
+}
+.qwe:hover{
+	background-color:#d4af7a;
+	color: white; 
+}
+.dw{
+        font-family: sans-serif;
+	font-size:20px;
+       font-weight:400;
+    border-radius: 5%;
+    margin-left: 405px;
+   margin-top: 10px;
+   text-align: center;
+	height: 25px;
+	width: 80px;
+        border: transparent;
+	background-color: white;
+	color: #d4af7a;
+        border-radius: 20px;
+}
+.dw:hover{
+	background-color:#d4af7a;
+	color: white; 
+}
+.st{
+	font-family: sans-serif;
+	font-size:20px;
+        font-weight:400;
+	width: 143px;
+	height: 20px;
+	text-align: center;
+	background-color: white;
+	color: #d4af7a;
+	margin-left: 380px;
+}
+.st:hover{
+	background-color:#d4af7a;
+	color: white; 	
+}
+.topp{
+	width: 65px;
+	height: 20px;
+	background-color: white;
+	color: #d4af7a;
+	text-align: center;
+	border-radius: 10%;
+	margin-left: 430px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.btm{
+	border: none;
+	background-color: transparent;
+        
+}
+.qqq{
+    float:left;
+        width:120px;
+        height:23px;
+        background-color: white;
+        color:#d4af7a;
+	font-family: sans-serif;
+	font-size:20px;
+        font-weight:400;
+	text-align: center;
+        margin-left: 320px;
+        border-radius: 20px;
+}
+.qqq:hover{
+    background-color:#d4af7a; 
+        color:white;
+}
+.qqqq{
+    float:left;
+        width:120px;
+        height:23px;
+        background-color: white;
+        color:#d4af7a;
+	font-family: sans-serif;
+	font-size:20px;
+        font-weight:400;
+	text-align: center;
+        margin-left: 385px;
+        border-radius: 20px;
+}
+.qqqq:hover{
+    background-color:#d4af7a; 
+        color:white;
+}
+.qqq1{
+    text-decoration: none;
+    color:#d4af7a;
+}
+.qqq11{
+    text-decoration: none;
+    color:white;
+}
+
+.qqq11:hover{
+    color:#d4af7a;
+}
+.qqq11{
+    text-decoration: none;
+    color:white;
+}
+.qqq1:hover{
+    color:white;
+}
+.aqw{
+    text-decoration: none;
+    color:white;
+}
+.aqw:hover{
+    color:red;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	scrollingElement = (document.scrollingElement || document.body)
+function scrollToBottom() {
+    
+   scrollingElement.scrollTop = scrollingElement.scrollHeight;
+   scrollingElement.scrollTop =630;
+}
+function scrollToTop (id) {
+   scrollingElement.scrollTop =0;
+}
+function scrollSmoothToBottom (id) {
+   $(scrollingElement).animate({
+      scrollTop: document.body.scrollHeight
+   }, 1500);
+}
+
+</script>
+<body>
+	<div class="fix">
+		<div class="ti">You Bus</div>
+		<div class="k">
+			<font class="bb" >HOME</font>&nbsp; &nbsp;
+                        <font class="bb"><a href="Fac" class="qqq11" >TIME-TABLE</a></font>&nbsp; &nbsp;
+                        <font class="aa"><a href="Logout" class="aqw" > LOG OUT</a></font>&nbsp; &nbsp;
+		</div>
+	</div>
+	<div class="ban">
+		<div class="q" >
+			<font>TIME-TABLE OF THE<br>BUSES</font><br>
+			<b style="font-size: 20px;" >check the latest time table of the buses and Edit it.</b>
+                        <a href="Fac" class="qqq11" >  <div class="bt">TIME-TABLE</div></a>
+                        <div class="bt2" onclick="scrollSmoothToBottom()" >EDIT TIME-TABLE</div>
+		</div>
+		<div class="z">
+			<div class="x">
+                            <center><font class="y">Search Buses</font></center></div>
+                            <form name="fm" method="post"  action="Search">
+                                <input type="text" name="te"  class="v">
+				<input type="text" name="tex" class="b">
+                    <br><br>
+                    <input style="margin-top:20px; margin-left:180px; background-color: rgba(255,255,255,0.3); 
+        border:1px solid white;  color: white; height: 25px;  " type="date" data-date-inline-picker="true"></center>
+                    <br><br>	<center><input type="submit" class="f"></center></form>
+		</div>
+	</div>
+	<hr>
+	
+	<hr>
+	<div class="ett">   
+		<div class="ppp">
+			<br><br>
+                        <form action="Tlogg" method="get" name="aq" onsubmit="return myvaluuu()">
+			<table>
+			<thead>
+				<tr>
+					<th>BUS NO.</th>
+					<th>FROM</th>
+					<th>TO</th>
+					<th>TIME</th>
+				</tr>
+				<tr contenteditable >
+					<td><input type="text" name="bn" placeholder="Enter Bus No." class="btm"></td>
+					<td><input type="text" name="rom" placeholder="From" class="btm"></td>
+					<td><input type="text" name="too" placeholder="To" class="btm"></td>
+					<td><input type="text" name="tim" placeholder="Enter time" class="btm"></td>
+				</tr>
+			</thead>
+		</table>
+                            <button type="submit" class="qwe">Enter New Row</button>
+                            <div class="qqq"><a href="Fac" class="qqq1" >Show Table</a></div>
+                            
+                        </form>
+                <br>
+                	<br><br>
+                        <form action="Deleterow" method="get">
+			<input type="text" name="del" placeholder="Enter Row No. You Want To Delete" style="border: transparent; background-color: transparent; border-bottom: 3px solid white; text-align: center; margin-left: 360px;">
+                        <button type="submit" class="dw">Delete</button>
+                        <br>
+                        <br>
+                        <div class="qqqq"><a href="Fac" class="qqq1" >Show Table</a></div>
+                        </form>
+				<br><br>
+		</div>
+		<div class="topp" onclick="scrollToTop()">^ TOP ^</div>
+	</div>
+        <script>
+            function myvaluuu(){
+            var v=document.forms["aq"]["bn"].value;
+            var p=document.forms["aq"]["rom"].value;
+            var t=document.forms["aq"]["too"].value;
+            var tt=document.forms["aq"]["tim"].value;
+            var flag=true;
+            var n=/[0-9]/g;
+            if(v==""){
+        alert("Bus No. can not be empty");
+        flag=false;
+        return flag; 
+        }
+        if(v.match(n)){
+        flag=true;
+        }
+        else{
+        alert("bus no should contain only digit");
+        flag=false;
+        return flag; 
+        }
+        if(p==""){
+        alert("From option can not be empty");
+        flag=false;
+        return flag; 
+        }
+        if(t==""){
+        alert("To option can not be empty");
+        flag=false;
+        return flag; 
+        }
+        if(tt==""){
+        alert("Time can not be empty");
+        flag=false;
+        return flag; 
+        }
+        if(tt.match(n)){
+        flag=true;
+        }
+        else{
+        alert("Time should contain only digit");
+        flag=false;
+        return flag; 
+        }
+        return flag;
+            }
+            </script>
+</body>
+</html>

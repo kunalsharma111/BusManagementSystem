@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouBus</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet"  href="styl.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+        <center>
+            <div class="zaq">You Bus</div>
+           <font style="color:#d4af7a;">Bus Management System </font>
+</center>
+<br>
+	<div class="cont">
+		<div class="form sign-in">
+			<h2>LOG IN</h2>
+			<form action="Login" method="post" name="signn" onsubmit="return myvaluu()">
+			<label>
+				<span>USERNAME</span>
+				<input type="text" name="username" style="background-color: white;">
+			</label>
+			<label>
+				<span>PASSWORD</span>
+				<input type="password" name="pwd">
+			</label>
+                            <p class="fp"> <a href="inde.html" style="text-decoration: none; color:black;"> Forgot Password</a></p>
+			<button type="submit" class="submit">Log In</button>
+			<button type="button" class="fb-btn">Sign In With <span>Facebook</span></button>
+		</form>
+		</div>
+		<div class="sub-cont">
+                    <div class="img"  >
+				<div class="img__text">
+					<h2>NEW HERE ?</h2>
+					<p>Sign Up And Find All The Bus Routes</p>
+				</div>
+				<div class="img__btn" onclick="openformm()">
+					<span class="m--up" >Sign Up</span>
+				</div>
+				<br>
+				<div class="img__btn" onclick="window.location.href='inde.html'">
+					<span class="m--up" >Log In</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-popupp" id="myformm">
+		<form action="Logg" method="post" class="form-containerr" name="sign" onsubmit="return myvalu()">
+    	<div class="sg" > <h5 style="color: black;"> <center> Sign up</center> </h5> </div> <br><br>
+		<center><input type="text" placeholder="Enter Unique User Name" name="urn" style="border-bottom :1px solid grey; width:300px;">
+		</center>
+		<center><input type="text" placeholder="Enter Email" name="email"  style="border-bottom: 1px solid grey;  width: 300px;"></center>
+    	<center><input type="text" placeholder="Enter Phone Number" name="num"  style="border-bottom: 1px solid grey;  width: 300px;"></center>
+  <center><input type="password" placeholder="Enter Password" name="psw" style="border-bottom: 1px solid grey;  width: 300px;">
+   </center>
+ <center><font> Sign up as : </font>
+   <select name="dropdown">
+   	<option value="student">STUDENT</option>
+   	<option value="facultyy">FACULTYY</option>
+   </select>
+   <br><br>
+   </center>
+	<center><button type="submit" class="btunn">Sign Up</button></center>
+		</form>
+	</div>
+
+    <script>
+        function myvaluu(){
+        var vv=document.forms["signn"]["username"].value;
+        var pp=document.forms["signn"]["pwd"].value;
+        var flagg=true;  
+        if(vv==""){
+        alert("Enter Valid Username Or Password");
+        flagg=false;
+        return flagg; 
+        }
+        if(pp==""){
+        alert("Enter Valid Username Or Password");
+        flagg=false;
+        return flagg; 
+        }
+        return flagg;
+        }
+        function myvalu(){
+  var v=document.forms["sign"]["urn"].value;
+  var p=document.forms["sign"]["email"].value;
+  var t=document.forms["sign"]["num"].value;
+  var q=document.forms["sign"]["psw"].value;
+  var flag=true;
+  var n=/[0-9]/g;
+  var u=/[A-Z]/g;
+  
+  if(v==""){
+    alert("username can not be empty");
+    flag=false;
+  }
+  if(v.length < 5){
+      alert("username should be of 5 or more character");
+  }
+  if(p==""){
+    alert("email can not be empty");
+    flag=false;
+  }
+   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(p) == false) 
+        {
+            alert('Invalid Email Address');
+            flag=false;
+        }
+
+  if(t==""){
+    alert("number can not be empty");
+    flag=false; 
+  }
+  if(t.match(n)){
+    flag=true;
+  }
+  else{
+    alert("phone no should contain only digit");
+    flag=false; 
+  }
+  if(t.length >10 || t.length <10){
+    alert("phone no should only be of 10 digit");
+    flag=false; 
+  }
+  else{
+    flag=true;
+  }
+  if(q==""){
+    alert("password can not be empty");
+  flag=false;
+  }
+  if(q.match(n)){
+    flag=true;
+  }
+  else{
+    alert("password must have a single number");
+    flag=false; 
+  }
+
+  if(q.match(u)){
+    flag=true;
+  }
+  else{
+    alert("password must have a single upper case letter");
+    flag=false; 
+  }
+  if(q.length>=8){
+    flag=true;
+  }
+  else{
+    alert("password length should be 8 or more");
+    flag=false; 
+  }
+  return flag;  
+}
+
+    </script>
+    
+<script  src="inde.js"></script>
+</body>
+</html>
